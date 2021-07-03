@@ -1,0 +1,416 @@
+/* Team Sass */
+
+//== team One
+.ulockd-team-member {
+  background-color: $white-ff;
+  cursor: pointer;
+  .team-thumb {
+  	overflow: hidden;
+  	position: relative;
+	.team-overlay {
+	  border: 1px solid $white-ff;
+	  bottom: 0;
+	  left: -100%;
+	  position: absolute;
+	  text-align: center;
+	  top: 0;
+	  @include transition(all 0.8s ease 0s);
+	  width: 100%;
+	  .team-icon {
+		&.style2 {
+		  margin-top: 45%;
+		}
+		&:hover {
+		  color: $white-ff !important;
+		  .team-overlay {
+			left: 0;
+		  }
+		}
+	  }
+	}
+  }
+  &:hover {
+  	.team-overlay {
+  	  left: 0;
+  	}
+  }
+}
+.team-details {
+  padding: 0 15px 15px;
+  p {
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 12px;
+  }
+  .team-icon {
+	margin-top: 25px;
+	&.style2 {
+	  margin-top: 45%;
+	}
+	&:hover {
+	  color: $white-ff !important;
+	  .team-overlay {
+		left: 0;
+	  }
+	}
+  	li {
+	  margin-right: -5px;
+	  margin-left: 0;
+	  a {
+		background: $white-ff;
+		border: 1px solid $white-ff;
+		font-size: 14px;
+		padding: 5px 9px;
+		@include transition(all 0.3s ease-in-out);
+	  }
+	}
+  }
+}
+.team-icon {
+  &:hover {
+	color: $white-ff !important;
+	.team-overlay {
+	  left: 0;
+	}
+  }
+  li {
+	margin-right: -5px;
+	margin-left: 0;
+	a {
+	  background: $white-ff;
+	  border: 1px solid $white-ff;
+	  font-size: 14px;
+	  padding: 5px 9px;
+	  @include transition(all 0.3s ease-in-out);
+	  &:hover {
+		color: $white-ff !important;
+	  }
+	}
+  }
+}
+.member-name {
+  font-size: 24px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.member-post {
+  margin-top: 0;
+}
+//== 2nd Team Member
+.team-member-two {
+  &:hover {
+  	.team-two-details{
+	  bottom: 0;
+	}
+  }  
+  .team-two-details {
+	background-color: $black-99;
+	bottom: -60%;
+	color: $white-ff;
+	left: 0;
+	padding: 12px 0 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	z-index: 1;
+	@include transition(all 0.5s ease-in-out);
+	p {
+	  font-size: 12px;
+	  line-height: 20px;
+	  margin-top: 12px;
+	}
+  }
+}
+.ulockd-tm-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.team-contact-info {
+  padding: 10px 0 10px;
+  &:hover {
+	cursor: pointer;
+  }
+  li {
+	font-size: 16px;
+	line-height: 30px;
+	@include transition(all 0.3s ease-in-out);
+	&:hover {
+	  color: $black-31;
+	}
+  }
+}
+
+/* Flip Team */
+.flip-container, 
+.front, 
+.back {
+  width: 100%;
+  height: 380px;
+}
+//== flip speed goes here
+.flip-container {
+  perspective: 1000px;
+  .flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+	&:hover {
+	  cursor: pointer;
+	}
+	.back {
+	  background-color: $white-f5;
+	  padding: 0 25px;
+	  p {
+		font-size: 16px;
+	  }
+	  .team-icon {
+	  	a {
+		  border: 1px solid $white-ff;
+		}
+	  }
+	}
+  }
+  &:hover,
+  &.hover {
+  	.flipper {
+	  transform: rotateY(180deg);
+  	}
+  }
+}
+//== hide back of pane during swap
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+//== front pane, placed above back
+.front {
+  background-position: center center !important;
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+//== back, initially hidden pane
+.back {
+  background-color: $white-f8;
+  transform: rotateY(180deg);
+  ul {
+  	li {
+	  font-size: 16px;
+	  line-height: 26px;
+	}
+  }
+}
+
+//== Team Three
+.ulockd-team {
+  &:before {
+  	background-image: url("../images/resource/bgi2.png");
+    background-position: right 90%;
+    background-repeat: no-repeat;
+    content: "";
+    height: 100%;
+    opacity: 0.05;
+    position: absolute;
+    width: 84%;
+  }
+}
+.ulockd-tm-thumb{
+  position: relative;
+  overflow: hidden;
+}
+.team-one {
+  background-color: $white-ff;
+  cursor: pointer;  
+  .team-thumb {
+	position: relative;
+	overflow: hidden;
+  }
+  &:hover {
+	.team-overlay {
+	  left: 0;
+	}
+  }
+  .team-overlay {
+	border: 1px solid $white-ff;
+	bottom: 0;
+	left: -100%;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	@include transition(all 0.8s ease);
+	width: 100%;
+	.team-icon {
+	  margin-top: 25px;
+	  &.style2 {
+		margin-top: 45%;
+	  }
+	  &:hover {
+		color: $white-ff !important;
+		.team-overlay {
+		  left: 0;
+		}
+	  }
+	  li {
+		margin-right: -5px;
+		margin-left: 0;
+		a {
+		  background: $white-ff;
+		  border: 1px solid $white-ff;
+		  font-size: 14px;
+		  padding: 5px 9px;
+		  @include transition(all 0.3s ease-in-out);
+		}
+	  }
+	}
+  }
+}
+.tm-name {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.tm-post {
+  margin-top: 0;
+}
+/* Team Details Member */
+.ulockd-pesonar-info {
+  li {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 10px;
+  }
+}
+/* Team Tab */
+.team-tab {
+  border: none;
+  li {
+	margin-right: 30px;
+	&:last-child {
+	  margin-right: 0;
+	}
+	a {
+	  border: 1px solid $gray-gainsboro;
+	  border-radius: 0;
+	  margin-left: 5px;
+	  margin-bottom: 25px;
+	  padding: 5px;
+	  position: relative;
+	  @include transition(all 0.3s ease-in-out);
+	}
+	&.active {
+	  a,
+	  a:focus,
+	  a:hover {
+		color: $black-33;
+	  }
+	  a {
+	  	&:before {
+		  bottom: -10px;
+		  content: "";
+		  height: 20px;
+		  left: 10%;
+		  position: absolute;
+		  -webkit-transform: rotate(45deg);
+		  -moz-transform: rotate(45deg);
+		  -o-transform: rotate(45deg);
+		  transform: rotate(45deg);
+		  width: 20px;
+		}
+	  }
+	}
+  }
+  .team-overview {
+  	strong {
+	  color: $black-44;
+	  line-height: 25px;
+	}
+  }
+}
+.team-overview {
+	strong {
+	  line-height: 25px;
+	}
+}
+.tm-ovv-title {
+  margin-top: 0;
+}
+
+/* ---------- OUT TEAM LAYOUT TWO SECTION  ---------- */
+.ulockd-team-two-member {
+  &:hover {
+	.ulockd-team-two-mdetails {
+	  bottom: 0;
+	}
+  }
+  .ulockd-team-two-mdetails {
+	background-color: $nightblue;
+	bottom: -59%;
+	color: $white-ff !important;
+	left: 0;
+	padding: 12px 0 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	z-index: 1;
+	@include transition(all 0.5s ease-in-out);
+	p {
+	  font-size: 12px;
+	  line-height: 20px;
+	  margin-top: 12px;
+	}
+  }
+}
+.ulockd-tm-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.ulockd-tm-sicon {
+  bottom: 0;
+  left: 0;
+  margin-bottom: -11px;
+  margin-top: 13px;
+  padding: 10px 8px;
+  right: 0;
+  li {
+	color: $white-ff;
+	padding: 0;
+	margin: 0;
+	a {
+	  border: 1px solid transparent;
+	  color: $white-ff;
+	  font-size: 16px;
+	  padding: 5px 8px;
+	  @include transition(all 0.3s ease-in-out);
+	  &:hover {
+		background-color: $nightblue;
+		border: 1px solid $white-ff;
+		color: $white-ff;
+	  }
+	}
+  }
+}
+.ulockd-tm-fpm {
+  padding: 10px 0 10px;
+  &:hover {
+	cursor: pointer;
+  }
+  li {
+	font-size: 16px;
+	line-height: 30px;
+	@include transition(all 0.3s ease-in-out);
+	&:hover {
+	  color: $black-31;
+	}
+  }
+}
+
+.ulockd-tm-name {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.ulockd-tm-post {
+  color: $white-f9;
+  margin-top: 0;
+}

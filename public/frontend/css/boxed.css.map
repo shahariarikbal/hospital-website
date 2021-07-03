@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;AAIA,IAAK;EACH,gBAAgB,EAAE,kBAA0B;EAC5C,MAAM,EAAE,MAAM;EACd,UAAU,EAAE,iBAAiB;EAC7B,KAAK,EAAE,MAAM;;AAEf;;;;;;cAMe;EACd,gBAAgB,EC6KgB,OAAS;;AD3K1C,sBAAuB;EACtB,OAAO,EAAE,OAAO;;AAEjB,8BAA+B;EAC9B,OAAO,EAAE,kBAAkB;;AAE5B;eACgB;EACf,gBAAgB,ECmKgB,OAAS;;ADjK1C,QAAS;EACR,gBAAgB,EAAE,8BAA8B;;AAEjD,QAAS;EACR,gBAAgB,EAAE,8BAA8B",
+"sources": ["../sass/boxed.scss","../sass/project-sass/_variables.scss"],
+"names": [],
+"file": "boxed.css"
+}

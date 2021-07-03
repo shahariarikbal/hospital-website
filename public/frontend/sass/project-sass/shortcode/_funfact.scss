@@ -1,0 +1,71 @@
+/* Funfact Sass */
+
+.ulockd-ffact {
+  position: relative;
+  span {
+	bottom: -55%;
+	color: $white-ff;
+	font-size: 80px;
+	left: 0;
+	opacity: 0.1;
+	position: absolute;
+  right: 0;
+  }
+  p {
+    color: $white-ff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .timer {
+	  color: $white-ff;
+	  font-size: 30px;
+	  line-height: 24px;
+  }
+}
+//== Funfact Two
+.ulockd-ffact-two {
+  position: relative;
+  span {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+   h3 {
+    font-weight: 400;
+  }
+  .timer {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.2em;
+  }
+}
+
+
+.ulockd-ffact-one {
+  position: relative;
+  z-index: $zindex-ulockd-ffact-one;
+  span {
+	  font-size: 48px;
+  }
+  .ulockd-icon-let {
+	  color: $white-ff;
+	  font-size: 60px;
+	  line-height: 24px;
+	  padding: 16px 17px;
+  }
+  p {
+    color: $white-ff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .timer {
+	  color: $white-fa;
+	  font-size: 24px;
+    font-weight: bold;
+  }
+}

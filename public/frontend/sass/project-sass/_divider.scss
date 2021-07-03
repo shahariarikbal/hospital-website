@@ -1,0 +1,83 @@
+/* Divider Sass */
+
+.ulockd-frst-divider {
+  overflow-x: hidden;
+  padding: 30px 0;
+  position: relative;
+  &:before {
+	background-color: rgba($nightblue-rgb, $alpha9);
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+  }
+  .hvr-overline-from-center {
+    &:before{
+      background-color: $white-ff;
+    }
+  }
+  .style1 {
+	background-attachment: scroll !important;
+	background-color: transparent;
+	background-image: url("../images/background/1.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	  -o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+	z-index: 1;
+	&:before {
+	  background-color: rgba($black-rgb, $alpha5);
+	  content: "";
+	  height: 100%;
+	  position: absolute;
+	  top: 0;
+	  width: 100%;
+	}
+  }
+}
+.divider {
+  background-attachment: scroll !important;
+  background-image: url("../images/background/1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  &:before {
+	background-color: rgba($black-1rgb, $alpha75);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+  }
+}
+.ulockd-divider {
+  padding: 40px 0;
+}
+.ulockd-divider1 {
+  background-attachment: fixed !important;
+  background-color: transparent;
+  background-image: url("../images/background/2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+  &:before {
+	background-color: rgba($white-rgb, $alpha8);
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+  }
+}

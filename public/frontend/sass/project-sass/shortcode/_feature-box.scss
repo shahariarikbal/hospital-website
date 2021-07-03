@@ -1,0 +1,35 @@
+/* Feature Sass */
+
+.feature-box {
+  position: relative;
+  h3 {
+    color: $white-ff;
+    margin-top: 0px;
+    position: relative;
+    @include transition(all 0.3s ease-in-out 0s);
+  }
+  .overlay {
+    bottom: 0;
+    left: 0;
+    padding: 5px 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    .icon {
+      color: $white-ff;
+      font-size: 36px;
+    }
+    &.two{
+      background-color: rgba($dark-cerulean, $alpha9) !important;
+      padding: 0 25px;
+    }
+    &.three{
+      background-color: rgba($curious-blue, $alpha9) !important;
+    }
+    a {      
+      color: $white-ff;
+      border: 1px solid $white-ff;
+      padding: 7px 45px;
+    }
+  }
+}

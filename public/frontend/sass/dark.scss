@@ -1,0 +1,177 @@
+/* Initialize Variables */
+@import "project-sass/variables.scss";
+
+.color-black33 {
+  color: unset;
+}
+.bgc-snowshade,
+.bgc-snowshade2 {
+  background-color: transparent;
+}
+
+
+body {
+  background-color: $black-11;
+  color: $gray-base;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $white-ff !important;
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color: $gray-lighter !important;
+  }
+  a {
+  	color: $gray-lighter !important;
+  }
+}
+a {
+  color: $gray-lighter !important;
+}
+blockquote {
+  color: $white-ff;
+}
+.dropdown-content {
+  background-color: $gray-base;
+}
+.ulockd-ohour-info {
+  &.style2 {
+    background-color: transparent;
+  }
+}
+.header-middle,
+.our-shop,
+.ulockd-testimonial,
+.ulockd-blog,
+.ulockd-ffact-one{
+  background-color: transparent !important;
+}
+.ulockd-cell, 
+.ulockd-addrss,
+.ulockd-info > p {
+  color: $gray-base;
+}
+.header-nav .main-header-nav.navbar-scrolltofixed {
+  background-color: $black-11;	
+}
+.ulockd-ffact-one p {
+  color: $white-ff !important;
+}
+nav.navbar.bootsnav.menu-style1 ul.nav li a.active, 
+nav.navbar.bootsnav.menu-style1 ul.nav li a:hover, 
+nav.navbar.bootsnav.menu-style1 ul.nav li a:focus,
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a:hover, 
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a:focus {
+  color: $white-ff !important;
+}
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
+  background-color: transparent;	
+}
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
+  background-color: $black-11;
+}
+nav.navbar.bootsnav.menu-style1 ul.nav li a {
+  color: $gray-gainsboro !important;
+}
+nav.navbar.bootsnav.menu-style2 ul.nav li a.active, 
+nav.navbar.bootsnav.menu-style2 ul.nav li a:hover, 
+nav.navbar.bootsnav.menu-style2 ul.nav li a:focus,
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a:hover, 
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu li a:focus {
+  color: $black-11 !important;
+}
+nav.navbar.bootsnav.menu-style2 ul.nav li a {
+  color: $gray-base !important;
+}
+.ulockd-partner-thumb {
+  background-color: $gray-lightest !important;	
+}
+form {
+  &.ulockd-login-form,
+  &.ulockd-reg-form {
+	background-color: $gray-base;
+  }
+}
+.cart-list {
+  li {
+    &.total {
+      span {
+        color: $gray-base;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:992px){
+  nav.menu-style1,
+  nav.navbar.bootsnav .navbar-toggle {
+	background-color: transparent !important;
+  }
+}
+
+.about-box {
+  background-color: transparent;
+  border: 1px solid $white-ff;
+}
+.ulockd-service-three,
+.ficon-box,
+.ulockd-team-member,
+.partner-slider {
+  background-color: transparent;
+}
+.testimonial,
+.blog-npost {
+  background-color: $gray-base;
+
+}
+.flip-container {
+  .flipper {
+    .back {
+      background-color: $gray-base;
+    }
+  }
+}
+article {
+  &.ulockd-blog-post {
+    .bp-details {
+      background-color: transparent;
+    }
+  }
+}
+
+.footer-contact,
+.footer-fst-col {
+   p {
+    color: unset;
+  }
+}
+.ftr-phone, 
+.ftr-fax, 
+.ftr-mail {
+  color: unset;
+}
+.twitter {
+  &.style2 {
+    ul {
+      li {
+        color: unset;
+      }
+    }
+  }
+}
+
+
+.ulockd-divider1 {
+  &:before {
+    background-color: rgba($black-rgb, $alpha8);
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
